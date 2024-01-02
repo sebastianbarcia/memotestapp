@@ -95,13 +95,11 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: "center",
+    alignItems:"center"
   },
   container: {
     flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
     justifyContent: "center",
-    alignContent: "center",
   },
   card: {
     width: Dimensions.get("screen").width / 6,

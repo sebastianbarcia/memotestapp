@@ -13,9 +13,7 @@ const ResultsPlayers = () => {
   return (
     <SafeAreaView style={styles.screen}>
       {intentsBest.length === 0 ? (
-        <Text style={{ textAlign: "center" }}>
-          No se registraron resultados
-        </Text>
+        <Text style={styles.noResult}>No se registraron resultados</Text>
       ) : (
         <FlatList
           style={styles.flatList}
@@ -37,4 +35,5 @@ const styles = StyleSheet.create({
   flatList: {
     flex: 1,
   },
+  noResult: { textAlign: "center" },
 });
